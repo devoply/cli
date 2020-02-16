@@ -24,17 +24,17 @@ configure – creates a yaml file to describe the default deployment
 
 database pull – pull the database from a remote server
   --site-domain=example.com
-  --remote-server=server1.example.com
+  --remote-server=calgary.example.com
 
 database push – push development database to a staging or production server. dangerous
   --site-domain=example.com
-  --remote-server=server1.example.com
+  --remote-server=islamabad.example.com
   --configure=true
 
 deploy – 
   --site-domain=example.com
   --remote-server=server1.example.com
-  --remote-site=staging.example.com
+  --remote-site=cancun.example.com
   --method=git|s3|scp|rsync
   --sync-db=true|force
 
