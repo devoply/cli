@@ -14,6 +14,8 @@ Using SCP supported by most SSH servers. Uses SSH so you must specify your SSH i
 ## Rsync
 Using a local rsync client. Rsync uses SSH so you must specify your SSH information using the configure command. Rsync must be installed on the local machine and in the application path.
 
+## Commands
+
 deploy – deploy local site to a remote server.
 list – list your local sites.
 remote-list – list your remote sites.
@@ -21,30 +23,30 @@ servers – list your remote servers.
 configure – creates a yaml file to describe the default deployment
 
 database pull – pull the database from a remote server
---site-domain=example.com
---remote-server=server1.example.com
+  --site-domain=example.com
+  --remote-server=server1.example.com
 
 database push – push development database to a staging or production server. dangerous
---site-domain=example.com
---remote-server=server1.example.com
---configure=true
+  --site-domain=example.com
+  --remote-server=server1.example.com
+  --configure=true
 
 deploy – 
---site-domain=example.com
---remote-server=server1.example.com
---remote-site=staging.example.com
---method=git|s3|scp|rsync
---sync-db=true|force
+  --site-domain=example.com
+  --remote-server=server1.example.com
+  --remote-site=staging.example.com
+  --method=git|s3|scp|rsync
+  --sync-db=true|force
 
 configure – 
---site-domain=example.com
---remote-server=server1.example.com
---remote-site=staging.example.com
---method=git|s3
---sync-db=true|force
---s3-bucket=
---s3-secret=
---s3-key=
---ssh-key-path=
---ssh-username=
+  --site-domain=example.com
+  --remote-server=server1.example.com
+  --remote-site=staging.example.com
+  --method=git|s3
+  --sync-db=true|force
+  --s3-bucket=
+  --s3-secret=
+  --s3-key=
+  --ssh-key-path=
+  --ssh-username=
 
