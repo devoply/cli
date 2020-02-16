@@ -26,7 +26,7 @@ database pull – pull the database from a remote server
   --site-domain=example.com
   --remote-server=calgary.example.com
 
-database push – push development database to a staging or production server. dangerous
+database push – *dangerous* push development database to a staging or production server. Databases should ideally be moved from production to development, not from development to production unless initially deploying a new site.
   --site-domain=example.com
   --remote-server=islamabad.example.com
   --configure=true
