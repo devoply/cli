@@ -15,7 +15,7 @@ Using SCP supported by most SSH servers. Uses SSH so you must specify your SSH i
 Using a local rsync client. Rsync uses SSH so you must specify your SSH information using the configure command. Rsync must be installed on the local machine and in the application path.
 
 ## Commands
-
+```
 deploy – deploy local site to a remote server.
 list – list your local sites.
 remote-list – list your remote sites.
@@ -49,4 +49,5 @@ configure –
   --s3-key=
   --ssh-key-path=
   --ssh-username=
+  ```
 
