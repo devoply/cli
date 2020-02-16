@@ -1,17 +1,17 @@
-DEVOPly CLI
+# DEVOPly CLI
 
 DEVOPly CLI is used to deploy locally developed apps managed by DEVOPly to your remote VPS servers managed by DEVOPly. It has a few modes, either backed by using S3 cloud storage to create an archive of your site and then copying that archive to the target remote server or using GIT to deploy (note: GIT is only available in the premium version).
 
-GIT Deployment
+## GIT Deployment
 Using Git. This command pushes your current commits to Github or Bitbucket and then pulls those from the remote server. It may also move your database archive to the destination server using SCP and therefore will require SSH credentials set using the configure command.
 
-S3 Deployment
+## S3 Deployment
 Using Amazon S3. You must specify S3 keys and bucket using the configure command. This is useful if you can not access your server via SSH for some reason such as a firewall.
 
-SCP
+## SCP
 Using SCP supported by most SSH servers. Uses SSH so you must specify your SSH information using the configure command.
 
-Rsync
+## Rsync
 Using a local rsync client. Rsync uses SSH so you must specify your SSH information using the configure command. Rsync must be installed on the local machine and in the application path.
 
 deploy – deploy local site to a remote server.
